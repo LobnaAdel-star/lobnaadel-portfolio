@@ -9,7 +9,7 @@
   <style>
     * {margin:0;padding:0;box-sizing:border-box;}
     body {font-family:'Inter',sans-serif;background:#f9fafb;color:#1f2937;scroll-behavior:smooth;line-height:1.6;}
-    
+
     /* Navigation */
     nav {
       position:fixed;top:0;left:0;width:100%;padding:15px 40px;
@@ -20,31 +20,55 @@
     nav a {color:#fff;font-weight:600;text-decoration:none;transition:color .3s;}
     nav a:hover {color:#4f9cf9;}
 
-    /* Header */
-    <header data-aos="fade-down" style="display:flex;align-items:center;justify-content:space-between;padding:80px 10%;background:linear-gradient(135deg,#273861,#1e3a8a);color:#fff;border-bottom-left-radius:50px;border-bottom-right-radius:50px;box-shadow:0 8px 20px rgba(0,0,0,0.3);">
-  <!-- النص -->
-  <div class="text" style="flex:1;padding-right:30px;text-align:right;">
-    <h1 style="font-size:3.5rem;margin-bottom:15px;">Lobna Adel</h1>
-    <p style="font-size:1.4rem;font-weight:600;margin-bottom:20px;">Backend Developer | Laravel Specialist | PHP Enthusiast</p>
-    <a href="#contact" class="btn" style="display:inline-block;padding:12px 25px;background:#4f9cf9;color:#fff;border-radius:30px;font-weight:600;text-decoration:none;transition:.3s;">Contact Me</a>
-  </div>
-  <!-- الصورة -->
-  <div style="flex:0 0 250px;">
-    <img src="myimage.jpg" alt="Profile Picture" style="width:250px;height:250px;border-radius:20px;object-fit:cover;box-shadow:0 8px 25px rgba(0,0,0,0.3);transition:transform 0.3s ease;">
-  </div>
-</header>
-
+    /* Header Professional */
+    header {
+      display:flex;
+      align-items:center;
+      justify-content:space-between;
+      padding:80px 10%;
+      background:linear-gradient(135deg,#273861,#1e3a8a);
+      color:#fff;
+      border-bottom-left-radius:50px;
+      border-bottom-right-radius:50px;
+      box-shadow:0 8px 20px rgba(0,0,0,0.3);
+    }
+    header .text {
+      flex:1;
+      padding-right:30px;
+      text-align:right;
+    }
+    header h1 {font-size:3.5rem;margin-bottom:15px;}
+    header p {font-size:1.4rem;font-weight:600;margin-bottom:20px;}
+    header .btn {
+      display:inline-block;padding:12px 25px;
+      background:#4f9cf9;color:#fff;
+      border-radius:30px;font-weight:600;text-decoration:none;transition:.3s;
+    }
+    header .btn:hover {background:#3572c1;}
+    header img {
+      flex:0 0 250px;
+      width:250px;height:250px;
+      border-radius:20px;
+      object-fit:cover;
+      box-shadow:0 8px 25px rgba(0,0,0,0.3);
+      transition:transform 0.3s ease;
+    }
+    header img:hover {transform:scale(1.05);}
 
     /* Sections */
     section {
       max-width:1000px;margin:80px auto;padding:40px;background:#fff;
       border-radius:12px;box-shadow:0 4px 14px rgba(0,0,0,0.06);
+      transition:transform 0.3s ease;
     }
+    section:hover {transform:translateY(-5px);}
     h2 {
       font-size:1.8rem;margin-bottom:20px;color:#1e3a8a;
       border-left:5px solid #4f9cf9;padding-left:10px;
     }
     ul {list-style:disc;padding-left:20px;}
+    a {color:#1e40af;text-decoration:none;font-weight:600;}
+    a:hover {color:#4f9cf9;}
 
     /* Projects Grid */
     .projects-grid {
@@ -57,13 +81,10 @@
     }
     .project-card:hover {transform:translateY(-5px);box-shadow:0 6px 15px rgba(0,0,0,0.08);}
     .project-title {font-weight:700;margin-bottom:10px;color:#111827;}
-    .project-card a {color:#1e3a8a;font-weight:600;}
-    .project-card a:hover {color:#4f9cf9;}
 
     /* Footer */
     footer {
-      text-align:center;padding:20px;background:#1e293b;color:#9ca3af;
-      margin-top:40px;font-size:14px;
+      text-align:center;padding:20px;background:#1e293b;color:#9ca3af;margin-top:40px;font-size:14px;
     }
   </style>
 </head>
@@ -81,12 +102,14 @@
     <a href="#contact">Contact</a>
   </nav>
 
-  <!-- Cover -->
+  <!-- Header Professional -->
   <header data-aos="fade-down">
+    <div class="text">
+      <h1>Lobna Adel</h1>
+      <p>Backend Developer | Laravel Specialist | PHP Enthusiast</p>
+      <a href="#contact" class="btn">Contact Me</a>
+    </div>
     <img src="myimage.jpg" alt="Profile Picture" />
-    <h1>Lobna Adel</h1>
-    <p>Backend Developer | Laravel Specialist | PHP Enthusiast</p>
-    <a href="#contact" class="btn">Contact Me</a>
   </header>
 
   <!-- About -->
@@ -201,4 +224,3 @@
   <script>AOS.init();</script>
 </body>
 </html>
-
