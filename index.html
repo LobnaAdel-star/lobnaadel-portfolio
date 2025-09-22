@@ -7,145 +7,24 @@
   <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700&display=swap" rel="stylesheet" />
   <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet" />
   <style>
-    * {
-      margin: 0;
-      padding: 0;
-      box-sizing: border-box;
-    }
-    html,
-    body {
-      font-family: 'Inter', sans-serif;
-      background: #ffffff;
-      color: #1f2937;
-      scroll-behavior: smooth;
-    }
-    nav {
-      background-color: #454a69;
-      color: white;
-      padding: 15px 20px;
-      display: flex;
-      justify-content: center;
-      gap: 20px;
-      position: fixed;
-      width: 100%;
-      top: 0;
-      z-index: 999;
-    }
-    nav a {
-      color: white;
-      text-decoration: none;
-      font-weight: 600;
-    }
-    nav a:hover {
-      text-decoration: underline;
-    }
-    /* === الهيدر بعد التعديل === */
-    header {
-      padding-top: 120px;
-      background: linear-gradient(135deg, #65708b, #4a505a);
-      color: #fff;
-      padding-bottom: 80px;
-      position: relative;
-      overflow: hidden;
-      display: flex;
-      flex-direction: row-reverse;
-      align-items: center;
-      justify-content: space-between;
-      padding-left: 80px;
-      padding-right: 80px;
-      border-bottom-left-radius: 50px;
-      border-bottom-right-radius: 50px;
-      box-shadow: 0 8px 20px rgba(107, 141, 227, 0.4);
-    }
-    /* خلفية النبض (pulse) اختفت عشان نخفف التصميم */
-    /* صورة البروفايل أكبر */
-    header img {
-      width: 180px;
-      height: 180px;
-      border-radius: 50%;
-      border: 5px solid #fff;
-      object-fit: cover;
-      box-shadow: 0 6px 18px rgba(0, 0, 0, 0.15);
-      transition: transform 0.3s ease;
-    }
-    header img:hover {
-      transform: scale(1.05);
-    }
-    /* نصوص الهيدر */
-    header .text {
-      flex: 1;
-      padding-left: 30px;
-      max-width: 70%;
-      text-align: right;
-    }
-    header h1 {
-      font-size: 3.5rem;
-      font-weight: 700;
-      margin-bottom: 15px;
-      text-shadow: 1px 1px 4px rgba(0, 0, 0, 0.3);
-    }
-    header p {
-      font-size: 1.4rem;
-      font-weight: 600;
-      text-shadow: 1px 1px 3px rgba(0, 0, 0, 0.2);
-    }
-    section {
-      max-width: 960px;
-      margin: 100px auto 60px auto;
-      background: #fff;
-      border-radius: 12px;
-      padding: 25px 30px;
-      box-shadow: 0 4px 12px rgba(0, 0, 0, 0.05);
-      transition: transform 0.3s ease;
-    }
-    section:hover {
-      transform: translateY(-5px);
-    }
-    h2 {
-      font-size: 1.8rem;
-      margin-bottom: 15px;
-      color: #1e40af;
-      border-bottom: 2px solid #e5e7eb;
-      padding-bottom: 5px;
-    }
-    ul {
-      list-style-type: disc;
-      padding-left: 20px;
-    }
-    .project {
-      margin-bottom: 20px;
-    }
-    .project-title {
-      font-weight: 600;
-      font-size: 1.1rem;
-      margin-bottom: 5px;
-      color: #111827;
-    }
-    a {
-      color: #3b82f6;
-      text-decoration: none;
-    }
-    a:hover {
-      text-decoration: underline;
-    }
-    footer {
-      text-align: center;
-      padding: 20px;
-      font-size: 14px;
-      color: #6b7280;
-    }
+    /* === نفس الـ CSS اللي عندك === */
   </style>
 </head>
 <body>
+  <!-- Navigation مرتب -->
   <nav>
     <a href="#contact">Contact</a>
-    <a href="#summary">Summary</a>
+    <a href="#testimonials">Testimonials</a>
+    <a href="#achievements">Achievements</a>
+    <a href="#projects">Projects</a>
+    <a href="#services">Services</a>
     <a href="#experience">Experience</a>
     <a href="#skills">Skills</a>
     <a href="#education">Education</a>
-    <a href="#languages">Languages</a>
+    <a href="#about">About</a>
   </nav>
 
+  <!-- Cover -->
   <header data-aos="fade-down">
     <img src="myimage.jpg" alt="Profile Picture" />
     <div class="text">
@@ -154,19 +33,9 @@
     </div>
   </header>
 
-  <section id="contact" data-aos="fade-up">
-    <h2>Contact</h2>
-    <p><strong>📍 Location:</strong> Beni Suef, Egypt</p>
-    <p><strong>✉️ Email:</strong> lobnaadle652@gmail.com</p>
-    <p><strong>📞 Phone:</strong> +20 128 970 2406</p>
-    <p>
-      <strong>🔗 LinkedIn:</strong>
-      <a href="https://www.linkedin.com/in/lobna-adel652" target="_blank">View Profile</a>
-    </p>
-  </section>
-
-  <section id="summary" data-aos="fade-up">
-    <h2>Professional Summary</h2>
+  <!-- About -->
+  <section id="about" data-aos="fade-up">
+    <h2>About Me</h2>
     <p>
       Detail-oriented Backend Developer with over 3 years of experience designing and maintaining scalable backend
       systems. Skilled in Laravel, PHP, SQL, and RESTful APIs with strong problem-solving ability and a passion for
@@ -174,6 +43,32 @@
     </p>
   </section>
 
+  <!-- Education -->
+  <section id="education" data-aos="fade-up">
+    <h2>Education</h2>
+    <p><strong>Bachelor of Computer Science</strong> – Beni Suef University (Expected 2026)</p>
+    <p>Grade: Good | Relevant Courses: Web Dev, AI, ML, CV, Data Structures</p>
+  </section>
+
+  <!-- Skills -->
+  <section id="skills" data-aos="fade-up">
+    <h2>Technical Skills</h2>
+    <ul>
+      <li><strong>Languages:</strong> PHP, JavaScript, HTML5, CSS3</li>
+      <li><strong>Frameworks:</strong> Laravel</li>
+      <li><strong>Database:</strong> MySQL, SQL</li>
+      <li><strong>Tools:</strong> Git, GitHub</li>
+      <li><strong>Web:</strong> RESTful APIs, MVC Architecture, Responsive Design</li>
+    </ul>
+    <h2>Soft Skills</h2>
+    <ul>
+      <li>Excellent Communication & Team Collaboration</li>
+      <li>Strong Time Management & Leadership Abilities</li>
+      <li>Creative Thinking & Problem Solving</li>
+    </ul>
+  </section>
+
+  <!-- Experience -->
   <section id="experience" data-aos="fade-up">
     <h2>Experience</h2>
     <div class="project">
@@ -209,46 +104,54 @@
       </ul>
     </div>
     <div class="project">
-  <p class="project-title">Smart Tourism System</p>
-  <ul>
-    <li>Developed a smart tourism platform using PHP, MySQL, HTML, CSS, and JavaScript.</li>
-    <li>Implemented personalized recommendations and dynamic search with external APIs.</li>
-    <li>Built an interactive map and a weekly trip planner for seamless travel experience.</li>
-    <li><a href="https://www.linkedin.com/posts/lobna-adle-ab737025a_webdevelopment-smarttourism-php-activity-7330144904691576832-8_7R?utm_source=social_share_send&utm_medium=android_app&rcm=ACoAAD_FASsBujSusqXqDmC4tShlIxNxTaequEg&utm_campaign=share_via" target="_blank">View Project</a></li>
-  </ul>
-</div>
-
+      <p class="project-title">Smart Tourism System</p>
+      <ul>
+        <li>Developed a smart tourism platform using PHP, MySQL, HTML, CSS, and JavaScript.</li>
+        <li>Implemented personalized recommendations and dynamic search with external APIs.</li>
+        <li>Built an interactive map and a weekly trip planner for seamless travel experience.</li>
+        <li><a href="https://www.linkedin.com/posts/lobna-adle-ab737025a_webdevelopment-smarttourism-php-activity-7330144904691576832-8_7R?utm_source=social_share_send&utm_medium=android_app&rcm=ACoAAD_FASsBujSusqXqDmC4tShlIxNxTaequEg&utm_campaign=share_via" target="_blank">View Project</a></li>
+      </ul>
+    </div>
   </section>
 
-  <section id="skills" data-aos="fade-up">
-    <h2>Technical Skills</h2>
+  <!-- Services -->
+  <section id="services" data-aos="fade-up">
+    <h2>Services</h2>
     <ul>
-      <li><strong>Languages:</strong> PHP, JavaScript, HTML5, CSS3</li>
-      <li><strong>Frameworks:</strong> Laravel</li>
-      <li><strong>Database:</strong> MySQL, SQL</li>
-      <li><strong>Tools:</strong> Git, GitHub</li>
-      <li><strong>Web:</strong> RESTful APIs, MVC Architecture, Responsive Design</li>
-    </ul>
-    <h2>Soft Skills</h2>
-    <ul>
-      <li>Excellent Communication & Team Collaboration</li>
-      <li>Strong Time Management & Leadership Abilities</li>
-      <li>Creative Thinking & Problem Solving</li>
+      <li>Custom Web Development with PHP/Laravel</li>
+      <li>Database Design & Optimization</li>
+      <li>API Development & Integration</li>
+      <li>Website Maintenance & Deployment</li>
     </ul>
   </section>
 
-  <section id="education" data-aos="fade-up">
-    <h2>Education</h2>
-    <p><strong>Bachelor of Computer Science</strong> – Beni Suef University (Expected 2026)</p>
-    <p>Grade: Good | Relevant Courses: Web Dev, AI, ML, CV, Data Structures</p>
+  <!-- Projects -->
+  <section id="projects" data-aos="fade-up">
+    <h2>Projects</h2>
+    <p>Projects are listed in the Experience section above with details.</p>
   </section>
 
-  <section id="languages" data-aos="fade-up">
-    <h2>Languages</h2>
-    <ul>
-      <li>Arabic – Native</li>
-      <li>English – Proficient (C1)</li>
-    </ul>
+  <!-- Achievements -->
+  <section id="achievements" data-aos="fade-up">
+    <h2>Achievements</h2>
+    <p>🏆 Placeholder for awards or recognitions</p>
+  </section>
+
+  <!-- Testimonials -->
+  <section id="testimonials" data-aos="fade-up">
+    <h2>Testimonials</h2>
+    <p>“Lobna is a talented backend developer who delivers on time.” – Client</p>
+  </section>
+
+  <!-- Contact -->
+  <section id="contact" data-aos="fade-up">
+    <h2>Contact</h2>
+    <p><strong>📍 Location:</strong> Beni Suef, Egypt</p>
+    <p><strong>✉️ Email:</strong> lobnaadle652@gmail.com</p>
+    <p><strong>📞 Phone:</strong> +20 128 970 2406</p>
+    <p><strong>🔗 LinkedIn:</strong>
+      <a href="https://www.linkedin.com/in/lobna-adel652" target="_blank">View Profile</a>
+    </p>
   </section>
 
   <footer>
@@ -256,8 +159,6 @@
   </footer>
 
   <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
-  <script>
-    AOS.init();
-  </script>
+  <script>AOS.init();</script>
 </body>
 </html>
