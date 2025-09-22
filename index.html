@@ -21,24 +21,19 @@
     nav a:hover {color:#4f9cf9;}
 
     /* Header */
-    header {
-      height:100vh;display:flex;align-items:center;justify-content:center;flex-direction:column;
-      text-align:center;background:linear-gradient(135deg,#273861,#1e3a8a);color:#fff;
-      padding:0 20px;
-    }
-    header img {
-      width:200px;height:200px;border-radius:20px;border:5px solid #fff;object-fit:cover;
-      margin-bottom:20px;box-shadow:0 6px 20px rgba(0,0,0,0.3);
-      transition: transform 0.3s ease;
-    }
-    header img:hover {transform: scale(1.05);}
-    header h1 {font-size:3rem;margin-bottom:10px;}
-    header p {font-size:1.3rem;margin-bottom:20px;}
-    .btn {
-      display:inline-block;padding:12px 25px;background:#4f9cf9;color:#fff;
-      border-radius:30px;font-weight:600;text-decoration:none;transition:.3s;
-    }
-    .btn:hover {background:#1e3a8a;}
+    <header data-aos="fade-down" style="display:flex;align-items:center;justify-content:space-between;padding:80px 10%;background:linear-gradient(135deg,#273861,#1e3a8a);color:#fff;border-bottom-left-radius:50px;border-bottom-right-radius:50px;box-shadow:0 8px 20px rgba(0,0,0,0.3);">
+  <!-- النص -->
+  <div class="text" style="flex:1;padding-right:30px;text-align:right;">
+    <h1 style="font-size:3.5rem;margin-bottom:15px;">Lobna Adel</h1>
+    <p style="font-size:1.4rem;font-weight:600;margin-bottom:20px;">Backend Developer | Laravel Specialist | PHP Enthusiast</p>
+    <a href="#contact" class="btn" style="display:inline-block;padding:12px 25px;background:#4f9cf9;color:#fff;border-radius:30px;font-weight:600;text-decoration:none;transition:.3s;">Contact Me</a>
+  </div>
+  <!-- الصورة -->
+  <div style="flex:0 0 250px;">
+    <img src="myimage.jpg" alt="Profile Picture" style="width:250px;height:250px;border-radius:20px;object-fit:cover;box-shadow:0 8px 25px rgba(0,0,0,0.3);transition:transform 0.3s ease;">
+  </div>
+</header>
+
 
     /* Sections */
     section {
@@ -206,3 +201,4 @@
   <script>AOS.init();</script>
 </body>
 </html>
+
